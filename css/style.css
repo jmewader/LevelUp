@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: #000;
+  background: #13191d;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -28,12 +28,45 @@ li {
   margin: 0px 0px 20px;
 }
 
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  background-color: #ffb72e;
+  font-size: 22px;
+  border-radius: 4px;
+  min-width: 140px;
+  min-height: 38px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button:hover {
+  background-color: #ffcb68;
+}
+
 /*MAIN*/
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  max-width: 1260px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.header {
+  position: absolute;
+  top: 5%;
 }
 
 .logo {
@@ -52,7 +85,12 @@ li {
   overflow: hidden;
 }
 
-.intro:after {
+.video-bg {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-bg:after {
   content: "";
   display: block;
   width: 100%;
@@ -62,11 +100,6 @@ li {
   top: 0;
   left: 0;
   z-index: 2;
-}
-
-.video-bg {
-  position: relative;
-  padding-bottom: 56.25%;
 }
 
 .video-bg__media {
@@ -107,10 +140,146 @@ li {
   width: 220px;
 }
 
-.offer__button {
+.offer__button:active {
+  background-color: #e99b07;
+}
+
+/*REVIEWS*/
+.reviews {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 60px 0px 40px;
+}
+
+.reviews__wrap {
+  display: flex;
+  max-width: 700px;
+}
+
+.reviews__item {
+  margin: 0px 65px;
+  overflow: hidden;
+}
+
+.reviews__image {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.reviews__image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.reviews__name {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: rgba(255, 253, 253, 0.78);
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/*PROMO*/
+
+.promo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.promo__wrap {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.promo__image {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  width: 390px;
+  height: 245px;
+  position: relative;
+}
+
+.promo__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.promo__descriptions {
+  max-width: 400px;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  grid-column-gap: 2%;
+  grid-row-gap: 45px;
+  padding: 20px 0px 26px;
+  width: 100%;
+}
+
+.promo__action {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px 0px 60px;
+}
+
+/*FEEDBACK*/
+
+.flip-clock-wrap {
+  width: 100%;
+  margin: 20px 0px 30px;
+}
+
+.feedback {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem 4%;
+  width: 100%;
+  max-width: 855px;
+  margin: 0 auto;
+  margin-bottom: 119px;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 20px;
+}
+
+.feedback__item label {
+  font-size: 14px;
+  padding-bottom: 7px;
+  font-weight: 600;
+}
+
+.feedback__button {
   border: none;
   background-color: #ffb72e;
-  font-size: 22px;
+  font-size: 19px;
   border-radius: 4px;
   min-width: 140px;
   min-height: 38px;
@@ -118,14 +287,71 @@ li {
   transition: 0.25s;
 }
 
-.offer__button:hover {
-  background-color: #ffcb68;
+/*PRICE*/
+
+.price {
+ 
 }
 
-.offer__button:active {
-  background-color: #e99b07;
+.price__new {
+  font-family: "Indie Flower", cursive;
+  font-weight: 100;
+  font-size: 75px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(219, 148, 66, 0.8), 0 0 60px rgba(219, 148, 66, 0.8),
+    0 0 80px rgba(219, 148, 66, 0.8), 0 0 100px rgba(219, 148, 66, 0.8),
+    0 0 140px rgba(219, 148, 66, 0.8), 0 0 200px rgba(219, 148, 66, 0.8);
+  animation: neon 3s infinite;
+  animation-timing-function: linear;
 }
 
+@keyframes neon {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-
-
+.price__old {
+  font-size: 55px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+}
+.price__old:before {
+  content: "";
+  border-bottom: 3px solid #fb0808;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  transform: rotate(12deg);
+}
