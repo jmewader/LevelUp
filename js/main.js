@@ -1,6 +1,5 @@
 $(".slider").slick({
   slidesToShow: 1,
-  centerMode: true,
   dots: true,
   adaptiveHeight: true,
   prevArrow: "<img src='/image/svg/arrow-left.svg' class='prev' alt='1'>",

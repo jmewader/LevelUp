@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tabled.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="timer/flip-clock.css" />
@@ -15,103 +17,109 @@
 <body>
     <div class="intro">
         <div class="video-bg">
-            <video src="bg/Igloo tents near the mountains.mp4" class="video-bg__media" muted autoplay loop>
+            <video src="bg/Igloo tents near the mountains.mp4" class="video-bg__media" playsinline muted autoplay loop>
             </video>
 
-            <div class="container">
-                <div class="header">
-                    <div class="logo">LevelUp</div>
-                </div>
-
-                <section class="offer">
+            <section class="offer">
+                <div class="container">
                     <div class="offer__wrap">
-                        <div class="offer__image-block">
-                            <img alt="лекарство" src="/image/prod.png" />
+                        <div class="offer__title">
+                            LevelUp
                         </div>
 
-                        <div class="offer__info">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                            </ul>
+                        <div class="offer__info-block">
+                            <div class="offer__image-block">
+                                <img alt="лекарство" src="/image/prod.png" />
+                            </div>
 
-                            <div class="actions"> <a class="button" href="#feedback">Заказать</a></div>
+                            <div class="offer__info">
+                                <ul>
+                                    <li>Mauris semper nisi nisi, et commodo arcu bibendum sed. Nunc mattis nulla a felis
+                                        vehicula. </li>
+                                    <li>Nullam tempor pellentesque tincidunt. Sed non metus et eros pretium mattis sit.
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                </ul>
+
+                                <div class="actions"> <a class="button" href="#feedback">Заказать</a></div>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
+            </section>
         </div>
+    </div>
     </div>
 
     <section class="cards">
-        <div class="cards__list">
-            <div class="cards__list__wrap">
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img src="https://shop.evalar.ru/upload/iblock/fae/fae37430871e6d2e43162eee35b9cdb3.jpg" />
+        <div class="container">
+            <div class="cards__list">
+                <div class="cards__list__wrap">
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img src="https://shop.evalar.ru/upload/iblock/fae/fae37430871e6d2e43162eee35b9cdb3.jpg" />
 
+                        </div>
+
+                        <span>Aliquam fringilla</span>
                     </div>
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img
+                                src="https://st.depositphotos.com/1298455/4502/i/450/depositphotos_45029869-stock-photo-fresh-mint-leaves-on-the.jpg" />
+                        </div>
 
-                    <span>Aliquam fringilla</span>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img
-                            src="https://st.depositphotos.com/1298455/4502/i/450/depositphotos_45029869-stock-photo-fresh-mint-leaves-on-the.jpg" />
+                        <span>Aliquam fringilla</span>
                     </div>
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img
+                                src="https://traveltimes.ru/wp-content/uploads/2021/09/Screenshot-2021-09-12-at-21-14-34-8085fa69-jpg-%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-JPEG-1200-%C3%97-800-%D0%BF%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%BE%D0%B2-%E2%80%94-%D0%9C%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5-94-770x460.png" />
+                        </div>
 
-                    <span>Aliquam fringilla</span>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img
-                            src="https://traveltimes.ru/wp-content/uploads/2021/09/Screenshot-2021-09-12-at-21-14-34-8085fa69-jpg-%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-JPEG-1200-%C3%97-800-%D0%BF%D0%B8%D0%BA%D1%81%D0%B5%D0%BB%D0%BE%D0%B2-%E2%80%94-%D0%9C%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5-94-770x460.png" />
-                    </div>
-
-                    <span>Aliquam fringilla</span>
-                </div>
-            </div>
-            <div class="cards__list__wrap">
-                <div class="cards__item">
-                    <div class="cards__item-wrap_center">
-                        <img src="/image/prod.png" />
+                        <span>Aliquam fringilla</span>
                     </div>
                 </div>
-                <div class="actions"> <a class="button" href="#feedback">Заказать</a></div>
-
-            </div>
-            <div class="cards__list__wrap">
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img
-                            src="https://n1s1.elle.ru/e2/f9/67/e2f9676c7f1f0fde71bf67d8aa51da11/728x486_1_58281c8e3f9324c071df2089a7bec679@940x627_0xc0a839a4_14787276141486655186.jpeg" />
+                <div class="cards__list__wrap_center">
+                    <div class="cards__item">
+                        <div class="cards__item-wrap_center">
+                            <img src="/image/prod.png" />
+                        </div>
                     </div>
+                    <a class="button" href="#feedback">Заказать</a>
 
-                    <span>Aliquam fringilla</span>
                 </div>
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img src="https://rastenievod.com/wp-content/uploads/2017/11/4-7.jpg" />
-                    </div>
+                <div class="cards__list__wrap">
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img
+                                src="https://n1s1.elle.ru/e2/f9/67/e2f9676c7f1f0fde71bf67d8aa51da11/728x486_1_58281c8e3f9324c071df2089a7bec679@940x627_0xc0a839a4_14787276141486655186.jpeg" />
+                        </div>
 
-                    <span>Aliquam fringilla</span>
-                </div>
-                <div class="cards__item">
-                    <div class="cards__item-wrap">
-                        <img src="https://ecoportal.info/wp-content/uploads/2017/02/klever-lugovoy-544x362.jpg" />
+                        <span>Aliquam fringilla</span>
                     </div>
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img src="https://rastenievod.com/wp-content/uploads/2017/11/4-7.jpg" />
+                        </div>
 
-                    <span>Aliquam fringilla</span>
+                        <span>Aliquam fringilla</span>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__item-wrap">
+                            <img src="https://ecoportal.info/wp-content/uploads/2017/02/klever-lugovoy-544x362.jpg" />
+                        </div>
+
+                        <span>Aliquam fringilla</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="reviews">
-        <div class="reviews__wrap">
-            <div class="slider">
-                <div class="slider single-item">
+        <div class="container">
+            <div class="reviews__wrap">
+                <div class="slider">
                     <div class="reviews__item">
                         <div class="reviews__image"><img src="image/doctor.png" alt="" /></div>
 
@@ -141,6 +149,7 @@
                             pellentesque
                             mattis dictum, ante urna porttitor risus.</p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -155,10 +164,12 @@
                 </div>
 
                 <div class="promo__descriptions_bubble">
-                    <p class="promo__descriptions">Morbi tristique urna nec odio facilisis pulvinar. Sed eu venenatis
-                        ante.
-                        Aliquam vehicula, leo ut posuere elementum, elit ex lobortis lectus, at euismod lorem risus
-                        quis.
+                    <p class="promo__descriptions">Phasellus fermentum dictum purus quis maximus. Vestibulum diam eros,
+                        posuere ac ante eget, interdum bibendum velit. Nullam elit lorem, lobortis quis enim at,
+                        tristique ultricies lectus. Duis in venenatis neque. Pellentesque consequat
+                        rhoncus ligula, in vestibulum diam molestie sit amet. Ut porta leo ut dui pulvinar, non semper
+                        elit volutpat. Etiam feugiat suscipit leo, euismod commodo elit volutpat ut. Etiam et elit in
+                        leo gravida iaculis vel ut massa.
                     </p>
                 </div>
 
@@ -177,7 +188,7 @@
     </div>
 
 
-    <div id="feedback" class="feedback-block">
+    <section id="feedback" class="feedback-block">
         <div class="container">
             <h1 class="title">LevelUp</h1>
 
@@ -227,12 +238,12 @@
                 <div class="feedback__image"><img src="/image/prod.png" /></div>
             </section>
         </div>
-    </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="timer/flip-clock.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="timer/flip-clock.js"></script>
 </body>
 
 </html>

@@ -39,7 +39,8 @@ li {
 .actions {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+  height: fit-content;
 }
 
 .button {
@@ -80,20 +81,6 @@ li {
   background-color: transparent;
 }
 
-.header {
-  position: absolute;
-  top: 5%;
-}
-
-.logo {
-  font-size: 36px;
-  color: #ffca00;
-  font-weight: 700;
-  z-index: 1000;
-  position: relative;
-  /* color: #7a3871; */
-}
-
 /*OFFER*/
 
 .intro {
@@ -102,8 +89,11 @@ li {
 }
 
 .video-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding-bottom: 56.25%;
 }
 
 .video-bg:after {
@@ -119,11 +109,12 @@ li {
 }
 
 .video-bg__media {
-  width: 100%;
-  height: auto;
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .offer {
@@ -140,20 +131,53 @@ li {
 
 .offer__wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
   z-index: 1000;
   position: relative;
   align-items: center;
   align-content: flex-start;
 }
 
-.offer__info {
+.offer__title {
   width: 100%;
-  padding: 0px 0px 0px 80px;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  color: #ffca00;
+  font-weight: 700;
+  position: relative;
+  margin: 0px 0px 60px;
+}
+
+.offer__info-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.offer__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px 0px 20px;
+}
+
+.offer__image-block {
+  display: flex;
+
+  align-items: center;
+
+  align-content: center;
+
+  justify-content: center;
+  color: inherit;
 }
 
 .offer__image-block img {
-  width: 220px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 /*CARDS*/
@@ -232,18 +256,25 @@ li {
 }
 
 .reviews__wrap {
-  display: flex;
+  width: 100%;
   max-width: 700px;
+  min-width: 0;
 }
 
 .reviews__item {
   margin: 0px 65px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .reviews__image {
   width: 100%;
   margin-bottom: 20px;
+  width: 300px;
   border-radius: 8px;
   display: flex;
   position: relative;
@@ -282,7 +313,7 @@ li {
   background-image: linear-gradient(171deg, #121212ea, #181818f1),
     url(/bg/46363-osen-starovozrastnye_lesa-derevo-utro-ekosistema-1920x1080.jpg);
   background-position: center;
-  padding: 100px 0px 40px;
+  padding: 130px 0px 60px;
   border-top: 1px solid #191919;
   border-bottom: 1px solid #191919;
 }
@@ -347,7 +378,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 60px 0px 40px;
+  padding: 80px 0px 40px;
   background-color: #000;
   border-top: 1px solid #191919;
   border-bottom: 1px solid #191919;
@@ -420,9 +451,8 @@ li {
 
 .feedback span {
   display: none;
-  border: 1px solid #ffb72e;
-  border-radius: 8px;
   padding: 2px 5px;
+  border: none;
   margin: 0 0 0 4px;
   position: absolute;
   background-color: #fff;

@@ -1,0 +1,74 @@
+@media screen and (max-width: 600px) {
+  .button {
+    min-width: 130px;
+    min-height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 36px;
+    margin: 0 0 15px;
+  }
+
+  .reviews__item {
+    margin: 0px 20px;
+  }
+
+  .reviews__image {
+    width: 250px;
+  }
+
+  .feedback input {
+    font-size: 14px;
+  }
+
+  .feedback span {
+    font-size: 14px;
+  }
+
+  .price {
+    margin: 0px 0px 20px;
+  }
+
+  .price del {
+    font-size: 28px;
+  }
+
+  .price__new {
+    font-size: 40px;
+    margin: 7px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .feedback__items {
+    order: 1;
+  }
+
+  .feedback {
+    flex-direction: column;
+  }
+
+  .feedback__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .feedback input {
+    max-width: 100%;
+  }
+
+  .feedback__item-wrap {
+    position: relative;
+  }
+
+  .feedback span {
+    left: -4px;
+    top: -32px;
+  }
+}
