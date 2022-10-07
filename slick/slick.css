@@ -2,20 +2,15 @@
 .slick-track {
   display: flex;
 }
-
 .slick-list {
   overflow: hidden;
 }
-
 .slider {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
 }
-
-
-
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -24,19 +19,15 @@
   cursor: pointer;
   transition: 0.25s;
 }
-
 .slider .slick-arrow:hover {
   opacity: 0.8;
 }
-
 .slider .slick-arrow.prev {
   left: 0;
 }
-
 .slider .slick-arrow.next {
   right: 0;
 }
-
 .slider .slick-dots {
   display: flex;
   align-items: center;
