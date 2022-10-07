@@ -35,7 +35,8 @@
                                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                             </ul>
-                            <button class="button">Заказать</button>
+
+                            <div class="actions"> <a class="button" href="#feedback">Заказать</a></div>
                         </div>
                     </div>
                 </section>
@@ -77,7 +78,8 @@
                         <img src="/image/prod.png" />
                     </div>
                 </div>
-                <button class="button">Заказать</button>
+                <div class="actions"> <a class="button" href="#feedback">Заказать</a></div>
+
             </div>
             <div class="cards__list__wrap">
                 <div class="cards__item">
@@ -144,69 +146,87 @@
         </div>
     </section>
 
-    <div class="container">
-        <section class="promo">
+
+    <section class="promo">
+        <div class="container">
             <div class="promo__wrap">
                 <div class="promo__image">
                     <img src="/image/doctor.png" />
                 </div>
 
-                <p class="promo__descriptions">Morbi tristique urna nec odio facilisis pulvinar. Sed eu venenatis ante.
-                    Aliquam vehicula, leo ut posuere elementum, elit ex lobortis lectus, at euismod lorem risus quis.
-                </p>
+                <div class="promo__descriptions_bubble">
+                    <p class="promo__descriptions">Morbi tristique urna nec odio facilisis pulvinar. Sed eu venenatis
+                        ante.
+                        Aliquam vehicula, leo ut posuere elementum, elit ex lobortis lectus, at euismod lorem risus
+                        quis.
+                    </p>
+                </div>
+
             </div>
 
             <ul class="promo__list">
-                <li class="promo__item">Влт адыва</li>
+                <li class="promo__item">Lorem ipsum dolor sit amet, consectetur.</li>
 
-                <li class="promo__item">Влт адыва</li>
+                <li class="promo__item">Lorem ipsum dolor sit amet, consectetur.</li>
 
-                <li class="promo__item">Влт адыва</li>
+                <li class="promo__item">Lorem ipsum dolor sit amet, consectetur.</li>
             </ul>
 
-            <div class="promo__action"><button class="button">Заказать</button></div>
-        </section>
+            <div class="promo__action"> <a class="button" href="#feedback">Заказать</a></div>
+    </section>
     </div>
 
-    <div class="container">
-        <h1 class="title">LevelUp</h1>
 
-        <div class="price">
-            <div class="price__new">10000 ₽</div>
+    <div id="feedback" class="feedback-block">
+        <div class="container">
+            <h1 class="title">LevelUp</h1>
 
-            <del class="price__old">15000 ₽</del>
+            <div class="price">
+                <del>15000 ₽</del>
+
+                <div class="price__new">10000 ₽</div>
+            </div>
+
+            <div class="flip-clock-wrap">
+                <ul class="flip-clock-container box">
+                    <li class="flip-item-seconds">00</li>
+
+                    <li class="flip-item-minutes">30</li>
+
+                    <li class="flip-item-hours">00</li>
+                </ul>
+            </div>
+
+            <section class="feedback">
+                <form class="feedback__items" action="#" id="form">
+                    <div class="feedback__item">
+                        <label for="formName">Имя*:</label>
+
+                        <div class="feedback__item-wrap">
+                            <input id="formName" placeholder="Введите имя" type="text" name="name"
+                                class="from__input" />
+
+                            <span for="formName">Например: Иван Иванов</span>
+                        </div>
+                    </div>
+
+                    <div class="feedback__item">
+                        <label for="formPhone">Телефон*:</label>
+
+                        <div class="feedback__item-wrap">
+                            <input id="formPhone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="phone" name="phone"
+                                class="phone" />
+
+                            <span for="formPhone">Например: +7 800 555 3535</ы>
+                        </div>
+                    </div>
+
+                    <button class="feedback__button">Отправить</button>
+                </form>
+
+                <div class="feedback__image"><img src="/image/prod.png" /></div>
+            </section>
         </div>
-
-        <div class="flip-clock-wrap">
-            <ul class="flip-clock-container box">
-                <li class="flip-item-seconds">00</li>
-
-                <li class="flip-item-minutes">30</li>
-
-                <li class="flip-item-hours">00</li>
-            </ul>
-        </div>
-
-        <section class="feedback">
-            <form action="#" id="form">
-                <div class="feedback__item">
-                    <label for="formName">Имя*:</label>
-
-                    <input id="formName" type="text" name="name" class="from__input" />
-                </div>
-
-                <div class="feedback__item">
-                    <label for="formPhone">Телефон*:</label>
-
-                    <input id="formPhone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" type="phone" name="phone"
-                        class="phone" />
-                </div>
-
-                <button class="feedback__button">Отправить</button>
-            </form>
-
-            <div><img src="/image/prod.png" /></div>
-        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
