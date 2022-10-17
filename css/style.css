@@ -244,7 +244,7 @@ li {
   justify-content: center;
   padding: 60px 0px 40px;
   background-image: linear-gradient(171deg, #121212, #181818),
-    url("/bg/14714-tuman-fon-dymka-tekstura-atmosfera-1920x1080.jpg");
+    url("../bg/14714-tuman-fon-dymka-tekstura-atmosfera-1920x1080.jpg");
 }
 
 .reviews__wrap {
@@ -303,7 +303,7 @@ li {
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(171deg, #121212ea, #181818f1),
-    url(/bg/46363-osen-starovozrastnye_lesa-derevo-utro-ekosistema-1920x1080.jpg);
+    url("../bg/46363-osen-starovozrastnye_lesa-derevo-utro-ekosistema-1920x1080.jpg");
   background-position: center;
   padding: 130px 0px 60px;
   border-top: 1px solid #191919;
